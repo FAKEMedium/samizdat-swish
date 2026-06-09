@@ -16,6 +16,8 @@ lib/Samizdat/resources/locale/swish/sv/swish.po
 lib/Samizdat/resources/locale/swish/swish.pot
 lib/Samizdat/resources/locale/swish/zh/swish.po
 lib/Samizdat/resources/migrations/pg/40-swish.sql
+lib/Samizdat/resources/migrations/pg/40-swish/1/down.sql
+lib/Samizdat/resources/migrations/pg/40-swish/1/up.sql
 lib/Samizdat/resources/settings/swish/schema.yml
 lib/Samizdat/resources/templates/swish/cancel/index.html.ep
 lib/Samizdat/resources/templates/swish/cancel/index.js
