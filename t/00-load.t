@@ -12,5 +12,5 @@ my $schema = eval { LoadFile(File::Spec->catfile($d,'settings','swish','schema.y
 ok(ref $schema eq 'HASH', 'swish settings schema loads')
   and is($schema->{'x-samizdat-audience'}, 'operator', 'audience is operator');
 ok(-d File::Spec->catdir($d,'templates','swish'), 'swish templates ship');
-ok(scalar(glob(File::Spec->catfile($d,'migrations','pg','*-swish.sql'))), 'swish pg migration ships');
+ok(scalar(glob(File::Spec->catfile($d,'migrations','pg','*-swish','*','up.sql'))), 'swish pg migration ships');
 done_testing;
