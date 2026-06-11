@@ -188,8 +188,8 @@ sub register ($self, $app, $config = {}) {
   $app->helper(swish_qr_svg => sub ($c, %params) {
     my $url = $c->swish_payment_url(%params);
 
-    # Read Swish logo PNG and encode as base64 data URI
-    my $logo_path = $c->app->home->child('src/swish/Swish icon qr-code.png');
+    # Read Swish logo PNG (shipped as a dist resource) and encode as base64 data URI
+    my $logo_path = $c->resource('static', 'swish', 'Swish icon qr-code.png');
     my $logo_data_uri = '';
     if (-f $logo_path) {
       require MIME::Base64;

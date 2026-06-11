@@ -5,3 +5,9 @@
 /Samizdat-Plugin-Swish-*
 *.bak
 *.tar.gz
+
+# Swish test certificates — download from developer.swish.nu, never commit
+src/swish/*.p12
+src/swish/*.key
+src/swish/*.pem
+src/swish/*.csr
